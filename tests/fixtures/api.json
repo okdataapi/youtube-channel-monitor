@@ -1,0 +1,507 @@
+{
+ "runs": [
+  {
+   "run_at": "2026-11-18T08:00:00Z",
+   "channels": {
+    "trailkit": {
+     "id": "UCTrailKitOutdoorGear001",
+     "url": "https://www.youtube.com/@trailkit",
+     "username": "trailkit",
+     "name": "Trail Kit",
+     "bio": "Fictional channel for tests.",
+     "avatar_url": null,
+     "verified": true,
+     "followers": 182000,
+     "following": null,
+     "posts": 486,
+     "likes": null,
+     "ext": {
+      "views": 51234567,
+      "created_at": "2015-03-02",
+      "country": "US",
+      "followers_text": null,
+      "posts_text": null
+     }
+    },
+    "UCMoonLabSpaceChannel123": {
+     "id": "UCMoonLabSpaceChannel123",
+     "url": "https://www.youtube.com/channel/UCMoonLabSpaceChannel123",
+     "username": null,
+     "name": "Moon Lab",
+     "bio": "Fictional channel for tests.",
+     "avatar_url": null,
+     "verified": true,
+     "followers": 1200000,
+     "following": null,
+     "posts": 1500,
+     "likes": null,
+     "ext": {
+      "views": 987654321,
+      "created_at": "2015-03-02",
+      "country": "US",
+      "followers_text": null,
+      "posts_text": null
+     }
+    }
+   },
+   "lists": {
+    "trailkit": [
+     [
+      {
+       "id": "trail000002",
+       "url": "https://www.youtube.com/watch?v=trail000002",
+       "type": "video",
+       "title": "Two nights",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 2000
+       }
+      },
+      {
+       "id": "trail000001",
+       "url": "https://www.youtube.com/watch?v=trail000001",
+       "type": "video",
+       "title": "Stove",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 50000
+       }
+      },
+      {
+       "id": "trail000000",
+       "url": "https://www.youtube.com/watch?v=trail000000",
+       "type": "video",
+       "title": "Old",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 9000
+       }
+      }
+     ]
+    ],
+    "UCMoonLabSpaceChannel123": [
+     [
+      {
+       "id": "moon0000002",
+       "url": "https://www.youtube.com/watch?v=moon0000002",
+       "type": "video",
+       "title": "Update",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 1000
+       }
+      },
+      {
+       "id": "moon0000001",
+       "url": "https://www.youtube.com/watch?v=moon0000001",
+       "type": "video",
+       "title": "Moon base",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 300
+       }
+      },
+      {
+       "id": "moon0000000",
+       "url": "https://www.youtube.com/watch?v=moon0000000",
+       "type": "video",
+       "title": "Older",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 100
+       }
+      }
+     ]
+    ]
+   },
+   "videos": {
+    "trail000002": {
+     "id": "trail000002",
+     "url": "https://www.youtube.com/watch?v=trail000002",
+     "type": "video",
+     "title": "Two nights in the hills, what I packed 🏕️",
+     "text": "",
+     "published_at": "2026-11-17T18:00:00.000Z",
+     "author": {
+      "id": "UCTrailKitOutdoorGear001",
+      "username": "trailkit",
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 2000,
+      "likes": 150,
+      "comments": 9
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 754,
+      "category": "Travel & Events"
+     }
+    },
+    "trail000001": {
+     "id": "trail000001",
+     "url": "https://www.youtube.com/watch?v=trail000001",
+     "type": "video",
+     "title": "=HYPERLINK(\"x\") stove test, \"quoted\"",
+     "text": "",
+     "published_at": "2026-11-14T09:30:00.000Z",
+     "author": {
+      "id": "UCTrailKitOutdoorGear001",
+      "username": "trailkit",
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 50000,
+      "likes": 4100,
+      "comments": null
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 312,
+      "category": "Travel & Events"
+     }
+    },
+    "moon0000002": {
+     "id": "moon0000002",
+     "url": "https://www.youtube.com/watch?v=moon0000002",
+     "type": "video",
+     "title": null,
+     "text": "Moon base update, part two.\n\nWhat we built this month:\n- a landing pad\n- two habitats\n- 40 m of road\nNext month: power and comms. Thanks to everyone who sent questions, the best ones are answered at the end of the video and in the pinned comment below.",
+     "published_at": "2026-11-16T07:30:00.000Z",
+     "author": {
+      "id": "UCMoonLabSpaceChannel123",
+      "username": null,
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 1000,
+      "likes": 80,
+      "comments": 4
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 1210,
+      "category": "Travel & Events"
+     }
+    },
+    "moon0000001": {
+     "id": "moon0000001",
+     "url": "https://www.youtube.com/watch?v=moon0000001",
+     "type": "video",
+     "title": "Moon base, November",
+     "text": "",
+     "published_at": "2026-11-10T12:00:00.000Z",
+     "author": {
+      "id": "UCMoonLabSpaceChannel123",
+      "username": null,
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 300,
+      "likes": null,
+      "comments": null
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 5.0,
+      "category": "Travel & Events"
+     }
+    }
+   }
+  },
+  {
+   "run_at": "2026-11-19T08:00:00Z",
+   "channels": {
+    "trailkit": {
+     "id": "UCTrailKitOutdoorGear001",
+     "url": "https://www.youtube.com/@trailkit",
+     "username": "trailkit",
+     "name": "Trail Kit",
+     "bio": "Fictional channel for tests.",
+     "avatar_url": null,
+     "verified": true,
+     "followers": 183000,
+     "following": null,
+     "posts": 487,
+     "likes": null,
+     "ext": {
+      "views": 51300000,
+      "created_at": "2015-03-02",
+      "country": "US",
+      "followers_text": null,
+      "posts_text": null
+     }
+    },
+    "UCMoonLabSpaceChannel123": {
+     "id": "UCMoonLabSpaceChannel123",
+     "url": "https://www.youtube.com/channel/UCMoonLabSpaceChannel123",
+     "username": null,
+     "name": "Moon Lab",
+     "bio": "Fictional channel for tests.",
+     "avatar_url": null,
+     "verified": true,
+     "followers": 1200000,
+     "following": null,
+     "posts": 1501,
+     "likes": null,
+     "ext": {
+      "views": 987700000,
+      "created_at": "2015-03-02",
+      "country": "US",
+      "followers_text": null,
+      "posts_text": null
+     }
+    }
+   },
+   "lists": {
+    "trailkit": [
+     [
+      {
+       "id": "trail000003",
+       "url": "https://www.youtube.com/watch?v=trail000003",
+       "type": "video",
+       "title": "New tent",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 25
+       }
+      },
+      {
+       "id": "trail000002",
+       "url": "https://www.youtube.com/watch?v=trail000002",
+       "type": "video",
+       "title": "Two nights",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 3000
+       }
+      },
+      {
+       "id": "trail000001",
+       "url": "https://www.youtube.com/watch?v=trail000001",
+       "type": "video",
+       "title": "Stove",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 50000
+       }
+      },
+      {
+       "id": "trail000000",
+       "url": "https://www.youtube.com/watch?v=trail000000",
+       "type": "video",
+       "title": "Old",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 9000
+       }
+      }
+     ]
+    ],
+    "UCMoonLabSpaceChannel123": [
+     [
+      {
+       "id": "moon0000002",
+       "url": "https://www.youtube.com/watch?v=moon0000002",
+       "type": "video",
+       "title": "Update",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 2000
+       }
+      },
+      {
+       "id": "moon0000001",
+       "url": "https://www.youtube.com/watch?v=moon0000001",
+       "type": "video",
+       "title": "Moon base",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 300
+       }
+      },
+      {
+       "id": "moon0000000",
+       "url": "https://www.youtube.com/watch?v=moon0000000",
+       "type": "video",
+       "title": "Older",
+       "published_at": "2026-11-15T08:00:00.000Z",
+       "metrics": {
+        "views": 100
+       }
+      }
+     ]
+    ]
+   },
+   "videos": {
+    "trail000003": {
+     "id": "trail000003",
+     "url": "https://www.youtube.com/watch?v=trail000003",
+     "type": "video",
+     "title": "New tent, first pitch",
+     "text": "",
+     "published_at": "2026-11-19T05:00:00.000Z",
+     "author": {
+      "id": "UCTrailKitOutdoorGear001",
+      "username": "trailkit",
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 25,
+      "likes": 4,
+      "comments": 1
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 488,
+      "category": "Travel & Events"
+     }
+    },
+    "trail000002": {
+     "id": "trail000002",
+     "url": "https://www.youtube.com/watch?v=trail000002",
+     "type": "video",
+     "title": "Two nights in the hills, what I packed 🏕️",
+     "text": "",
+     "published_at": "2026-11-17T18:00:00.000Z",
+     "author": {
+      "id": "UCTrailKitOutdoorGear001",
+      "username": "trailkit",
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 2600,
+      "likes": 170,
+      "comments": 11
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 754,
+      "category": "Travel & Events"
+     }
+    },
+    "moon0000002": {
+     "id": "moon0000002",
+     "url": "https://www.youtube.com/watch?v=moon0000002",
+     "type": "video",
+     "title": null,
+     "text": "Moon base update, part two.\n\nWhat we built this month:\n- a landing pad\n- two habitats\n- 40 m of road\nNext month: power and comms. Thanks to everyone who sent questions, the best ones are answered at the end of the video and in the pinned comment below.",
+     "published_at": "2026-11-16T07:30:00.000Z",
+     "author": {
+      "id": "UCMoonLabSpaceChannel123",
+      "username": null,
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 1500,
+      "likes": 95,
+      "comments": 6
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 1210,
+      "category": "Travel & Events"
+     }
+    },
+    "moon0000001": {
+     "id": "moon0000001",
+     "url": "https://www.youtube.com/watch?v=moon0000001",
+     "type": "video",
+     "title": "Moon base, November",
+     "text": "",
+     "published_at": "2026-11-10T12:00:00.000Z",
+     "author": {
+      "id": "UCMoonLabSpaceChannel123",
+      "username": null,
+      "name": null,
+      "avatar_url": null,
+      "followers": null,
+      "verified": true
+     },
+     "metrics": {
+      "views": 300,
+      "likes": null,
+      "comments": null
+     },
+     "images": null,
+     "hashtags": null,
+     "ext": {
+      "length_s": 5.0,
+      "category": "Travel & Events"
+     }
+    }
+   }
+  }
+ ],
+ "transcripts": {
+  "trail000002": {
+   "video_id": "trail000002",
+   "lang": "en",
+   "segments": [
+    {
+     "start": 0,
+     "end": 3.1,
+     "text": "Here is what I pack for a two-night trip."
+    },
+    {
+     "start": 3.1,
+     "end": 5.0,
+     "text": "Tent, quilt, stove."
+    }
+   ],
+   "text": "Here is  what I pack for a two-night trip. \r\n\n Tent,  quilt, stove."
+  },
+  "trail000003": {
+   "video_id": "trail000003",
+   "lang": "en",
+   "segments": [
+    {
+     "start": 0,
+     "end": 2.0,
+     "text": "First pitch of the new tent."
+    }
+   ],
+   "text": "First pitch of the new tent."
+  },
+  "moon0000002": {
+   "video_id": "moon0000002",
+   "lang": "en",
+   "segments": [
+    {
+     "start": 0,
+     "end": 2.4,
+     "text": "This month we built a landing pad."
+    }
+   ],
+   "text": "This month we built a landing pad."
+  }
+ }
+}

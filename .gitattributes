@@ -1,0 +1,2 @@
+# The tests compare these byte for byte; keep LF line endings on every checkout.
+tests/fixtures/** text eol=lf

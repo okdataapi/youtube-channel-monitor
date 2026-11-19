@@ -1,0 +1,63 @@
+name: monitor
+
+# Takes one snapshot a day and commits data/channels.csv, data/videos.csv and data/transcripts/ back to the repository.
+# Set what to watch under Settings -> Secrets and variables -> Actions -> Variables:
+#   CHANNELS     space-separated handles, channel IDs or channel links, e.g. "@NASA @TED UCpVm7bg6pXKo1Pr6k5kxG9A"
+#   VIDEOS       newest videos to record per channel (default 10)
+#   TRANSCRIPTS  transcripts to save of the newest new uploads (default 0)
+# Without CHANNELS it watches @NASA, @natgeo and @TED.
+# The key goes in the repository secret OKDATA_API_KEY.
+
+on:
+  schedule:
+    - cron: "23 6 * * *"   # every day at 06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: monitor
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Take a snapshot
+        env:
+          OKDATA_API_KEY: ${{ secrets.OKDATA_API_KEY }}
+          CHANNELS: ${{ vars.CHANNELS }}
+          VIDEOS: ${{ vars.VIDEOS || '10' }}
+          TRANSCRIPTS: ${{ vars.TRANSCRIPTS || '0' }}
+        run: |
+          if [ -z "$OKDATA_API_KEY" ]; then
+            echo "::notice::Add an OKDATA_API_KEY repository secret to start monitoring."
+            exit 0
+          fi
+          if [ -z "$CHANNELS" ]; then CHANNELS="@NASA @natgeo @TED"; fi
+          args=()
+          for channel in $CHANNELS; do args+=(--channel "$channel"); done
+          rc=0
+          python monitor.py "${args[@]}" --videos "$VIDEOS" --transcripts "$TRANSCRIPTS" --out data \
+            > "$RUNNER_TEMP/report.txt" || rc=$?
+          cat "$RUNNER_TEMP/report.txt"
+          { echo '```'; cat "$RUNNER_TEMP/report.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$rc" = 4 ]; then
+            echo "::warning::Some calls failed (see the log above); everything else was saved."
+            rc=0
+          fi
+          exit $rc
+      - name: Commit the data
+        if: always()
+        run: |
+          [ -d data ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/   # data/ is in .gitignore for local runs
+          git diff --cached --quiet && exit 0
+          git commit -m "data: YouTube snapshot $(date -u +%F)"
+          git pull --rebase
+          git push
